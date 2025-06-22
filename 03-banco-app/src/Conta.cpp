@@ -12,7 +12,7 @@ bool transferenciaValida(float valor)
     return true;
 }
 
-void Conta::sacar(float valorSacar)
+void ContaClasse::sacar(float valorSacar)
 {
     if (transferenciaValida(valorSacar))
     {
@@ -20,10 +20,18 @@ void Conta::sacar(float valorSacar)
     }
 }
 
-void Conta::depositar(float valorDepositar)
+void ContaClasse::depositar(float valorDepositar)
 {
     if (transferenciaValida(valorDepositar))
     {
         saldo = saldo + valorDepositar;
     }
+}
+
+float ContaClasse::recuperaSaldo(){
+    return saldo;
+}
+
+void ContaClasse::defineSaldo(float valorSaldo){
+    saldo = valorSaldo;
 }

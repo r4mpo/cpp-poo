@@ -29,7 +29,7 @@ bool transferenciaValida(float valor)
 // uma referência. Em vez de receber uma cópia das
 // informações da variável, recebe a própria, modificando
 // seu valor diretamente na função.
-void sacar(Conta& conta, float valorSaque)
+void sacar(Conta &conta, float valorSaque)
 {
     if (transferenciaValida(valorSaque))
     {
@@ -41,14 +41,13 @@ void sacar(Conta& conta, float valorSaque)
 // uma referência. Em vez de receber uma cópia das
 // informações da variável, recebe a própria, modificando
 // seu valor diretamente na função.
-void depositar(Conta& conta, float valorDeposito)
+void depositar(Conta &conta, float valorDeposito)
 {
     if (transferenciaValida(valorDeposito))
     {
         conta.saldo = conta.saldo + valorDeposito;
     }
 }
-
 
 int main()
 {

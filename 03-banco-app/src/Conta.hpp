@@ -2,13 +2,35 @@
 #include <string>
 
 // Cria a estrutura
-struct Conta
+struct ContaEstrutura
 {
     std::string numero;
     std::string cpfTitular;
     std::string nomeTitular;
-    float saldo;
 
     void sacar(float valorSacar);
     void depositar(float valorDepositar);
+
+private:
+    float saldo;
 };
+
+// cria a class
+class ContaClasse
+{
+    float saldo = 0;
+
+    std::string numero;
+    std::string cpfTitular;
+    std::string nomeTitular;
+
+public:
+    void sacar(float valorSacar);
+    void depositar(float valorDepositar);
+    void defineSaldo(float valorSaldo);
+    float recuperaSaldo();
+};
+
+// Aiferença básica entre as estruturas e classes
+// é que na class, por padrão, é tudo privado, enquanto no
+// struct, por padrão, tudo é publico
