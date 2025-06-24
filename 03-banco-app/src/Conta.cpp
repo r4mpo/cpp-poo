@@ -9,8 +9,12 @@
 //     this->nomeTitular = nomeTitular;
 // }
 
+int ContaClasse::numeroDeContas = 0;
+
 // Forma mais limpa e profissional de inicializar o construtor:
-ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular): numero(numero), cpfTitular(cpfTitular), nomeTitular(nomeTitular){}
+ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular): numero(numero), cpfTitular(cpfTitular), nomeTitular(nomeTitular){
+    numeroDeContas++;
+}
 
 bool transferenciaValida(float valor)
 {

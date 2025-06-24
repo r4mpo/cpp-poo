@@ -25,5 +25,8 @@ int main()
     // Imprimindo informações
     cout << "Uma conta possui R$" << primeiraConta.recuperaSaldo() << " e a outra R$" << segundaConta.recuperaSaldo() << endl;
 
+    // Imprimindo o numero de contas
+    cout << "Número de contas: " << ContaClasse::numeroDeContas << endl;
+
     return 0;
 }
