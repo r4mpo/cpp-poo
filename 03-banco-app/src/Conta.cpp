@@ -16,6 +16,11 @@ ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string
     numeroDeContas++;
 }
 
+// Método DESTRUTOR da classe
+ContaClasse::~ContaClasse() {
+    numeroDeContas--;
+}
+
 bool transferenciaValida(float valor)
 {
     if (valor <= 0)
