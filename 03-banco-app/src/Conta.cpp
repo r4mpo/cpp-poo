@@ -1,12 +1,16 @@
 #include "Conta.hpp"
 #include <iostream>
 
-ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular)
-{
-    this->numero = numero;
-    this->cpfTitular = cpfTitular;
-    this->nomeTitular = nomeTitular;
-}
+// Uma das formas de inicializar o construtor:
+// ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular)
+// {
+//     this->numero = numero;
+//     this->cpfTitular = cpfTitular;
+//     this->nomeTitular = nomeTitular;
+// }
+
+// Forma mais limpa e profissional de inicializar o construtor:
+ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular): numero(numero), cpfTitular(cpfTitular), nomeTitular(nomeTitular){}
 
 bool transferenciaValida(float valor)
 {
