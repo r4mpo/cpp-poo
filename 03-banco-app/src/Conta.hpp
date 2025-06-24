@@ -25,6 +25,7 @@ class ContaClasse
     std::string nomeTitular;
 
 public:
+    ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular);
     void sacar(float valorSacar);
     void depositar(float valorDepositar);
     void defineSaldo(float valorSaldo);

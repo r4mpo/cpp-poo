@@ -1,6 +1,13 @@
 #include "Conta.hpp"
 #include <iostream>
 
+ContaClasse::ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular)
+{
+    this->numero = numero;
+    this->cpfTitular = cpfTitular;
+    this->nomeTitular = nomeTitular;
+}
+
 bool transferenciaValida(float valor)
 {
     if (valor <= 0)
@@ -28,10 +35,12 @@ void ContaClasse::depositar(float valorDepositar)
     }
 }
 
-float ContaClasse::recuperaSaldo(){
+float ContaClasse::recuperaSaldo()
+{
     return saldo;
 }
 
-void ContaClasse::defineSaldo(float valorSaldo){
+void ContaClasse::defineSaldo(float valorSaldo)
+{
     saldo = valorSaldo;
 }

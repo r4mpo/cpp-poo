@@ -12,11 +12,11 @@ using namespace std;
 int main()
 {
     // Cria variável a partir da classe
-    ContaClasse primeiraConta;
+    ContaClasse primeiraConta("123456", "Erick", "111.111.111.11");
     primeiraConta.defineSaldo(14.32);
 
     // Cria variável a partir da classe
-    ContaClasse segundaConta;
+    ContaClasse segundaConta("123456", "Rampo", "222.222.222.22");;
     segundaConta.defineSaldo(13.22);
 
     // Usando método
