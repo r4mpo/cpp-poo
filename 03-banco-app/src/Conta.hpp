@@ -24,6 +24,7 @@ class ContaClasse
     std::string cpfTitular;
     std::string nomeTitular;
 
+    bool transferenciaValida(float valor);
 public:
     ContaClasse(std::string numero, std::string cpfTitular, std::string nomeTitular);
     static int numeroDeContas;
